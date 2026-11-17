@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#142b28" name="theme-color"/>
+<meta content="A proposed cafe website with a browsable menu, location details and table enquiry flow." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="The Capetown Cafe | Patna" property="og:title"/>
+<meta content="A proposed cafe website with a browsable menu, location details and table enquiry flow." property="og:description"/>
+<title>The Capetown Cafe | Patna</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Serif+Display&amp;family=Playfair+Display:wght@500;600;700&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "The Capetown Cafe", "telephone": "+91 90656 63666", "address": {"@type": "PostalAddress", "streetAddress": "2nd Floor, Sumitra Palace, Atal Path, Harihar Path, Mahesh Nagar, Keshri Nagar, Patna, Bihar 800024", "addressLocality": "Patna", "addressRegion": "Bihar", "postalCode": "800024", "addressCountry": "IN"}}</script>
+<style>
+    :root {
+      --bg:#eef3f0; --paper:#fbfffc; --ink:#192a27; --muted:#63766f;
+      --accent:#1e756a; --accent2:#9cc7ba; --dark:#142b28; --line:rgba(25,42,39,.12);
+      --serif:'Playfair Display', Georgia, serif; --sans:'DM Sans',Arial,sans-serif;
+      --radius:24px; --shadow:0 22px 70px rgba(0,0,0,.13);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
+    .preview-strip{background:var(--dark);color:#fff;text-align:center;padding:9px 15px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+    .preview-strip b{color:var(--accent2);font-weight:700}
+    .site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-wrap{max-width:1180px;margin:auto;min-height:78px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand-mark{width:44px;height:44px;border-radius:15px;background:var(--dark);color:var(--accent2);display:grid;place-items:center;font-family:var(--serif);font-size:20px;flex:none}
+    .brand-name{font-size:15px;font-weight:700;line-height:1.15;letter-spacing:-.02em}
+    .brand-sub{font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
+    .nav-links{display:flex;align-items:center;gap:26px;font-size:12px;font-weight:600;color:var(--muted)}
+    .nav-links a:hover{color:var(--accent)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 20px;background:var(--accent);color:#fff;font-size:12px;font-weight:700;transition:.2s ease;border:1px solid var(--accent)}
+    .nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .btn.secondary{background:transparent;color:var(--ink);border-color:var(--line)}
+    .menu-toggle{display:none;border:1px solid var(--line);background:transparent;color:var(--ink);width:42px;height:42px;border-radius:50%;font-size:20px}
+    .container{width:min(1180px,calc(100% - 56px));margin:auto}
+    .hero{padding:58px 0 44px}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:28px;height:1px;background:var(--accent)}
+    h1{font-family:var(--serif);font-size:clamp(48px,6.2vw,82px);line-height:.98;letter-spacing:-.045em;font-weight:600;margin:22px 0 22px;max-width:690px}
+    .hero-copy{color:var(--muted);font-size:16px;max-width:540px;margin:0 0 28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .proof{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:11px}
+    .proof strong{font-size:16px;color:var(--ink);font-weight:700}
+    .proof i{height:28px;width:1px;background:var(--line);margin:0 8px}
+    .hero-visual{min-height:520px;position:relative;border-radius:var(--radius);overflow:hidden;background:var(--dark);box-shadow:var(--shadow)}
+    .hero-visual img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;opacity:.88}
+    .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(0,0,0,.67) 100%)}
+    .visual-caption{position:absolute;z-index:2;left:28px;right:28px;bottom:25px;color:#fff}
+    .visual-caption span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#eee0cb}
+    .visual-caption h2{font-family:var(--serif);font-size:32px;line-height:1.08;margin:8px 0 0;font-weight:500}
+    .floating-tag{position:absolute;z-index:3;top:24px;left:24px;padding:10px 14px;background:var(--paper);color:var(--ink);border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .section{padding:78px 0}
+    .section-head{max-width:650px;margin-bottom:34px}
+    .section-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(36px,4.8vw,56px);line-height:1.03;letter-spacing:-.03em;margin:13px 0}
+    .section-head p{color:var(--muted);font-size:14px;max-width:590px;margin:0}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .service-card{background:var(--paper);border:1px solid var(--line);padding:25px 21px 24px;border-radius:18px;min-height:210px;transition:.22s ease}
+    .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .service-no{display:inline-block;color:var(--accent);font-size:10px;font-weight:700;letter-spacing:.12em;margin-bottom:28px}
+    .service-card h3{font-family:var(--serif);font-size:24px;line-height:1.05;margin:0 0 10px;font-weight:600}
+    .service-card p{color:var(--muted);font-size:12px;margin:0}
+    .story{background:var(--dark);color:#fff;overflow:hidden}
+    .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+    .story-image{height:420px;border-radius:var(--radius);overflow:hidden;position:relative}
+    .story-image img{width:100%;height:100%;object-fit:cover;opacity:.9}
+    .story-copy .eyebrow{color:var(--accent2)}
+    .story-copy h2{font-family:var(--serif);font-size:clamp(38px,4.6vw,58px);line-height:1.03;font-weight:500;letter-spacing:-.03em;margin:17px 0}
+    .story-copy p{color:rgba(255,255,255,.72);font-size:14px;max-width:530px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:28px}
+    .stat{background:var(--paper);padding:20px;color:var(--ink)}
+    .stat strong{display:block;font-family:var(--serif);font-size:26px;line-height:1.1;color:var(--accent)}
+    .stat span{display:block;font-size:10px;color:var(--muted);margin-top:7px;letter-spacing:.04em}
+    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:210px 210px;gap:14px}
+    .gallery-grid figure{margin:0;overflow:hidden;border-radius:18px;background:var(--dark);position:relative}
+    .gallery-grid figure:first-child{grid-row:span 2}
+    .gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .gallery-grid figure:hover img{transform:scale(1.04)}
+    .gallery-note{font-size:10px;color:var(--muted);margin-top:12px}
+    .contact-panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+    .contact-panel h2{font-family:var(--serif);font-size:clamp(35px,4.5vw,52px);line-height:1.02;font-weight:500;margin:12px 0}
+    .contact-panel p{color:var(--muted);font-size:13px}
+    .contact-list{display:grid;gap:14px}
+    .contact-item{display:flex;gap:12px;align-items:flex-start;font-size:13px}
+    .contact-icon{width:34px;height:34px;border-radius:12px;background:var(--bg);color:var(--accent);display:grid;place-items:center;flex:none}
+    .contact-item small{display:block;color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    footer{padding:28px 0 88px;color:var(--muted);font-size:11px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+    .mobile-call{display:none}
+    .fineprint{font-size:10px;color:var(--muted);margin-top:12px}
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:34px} .hero-visual{min-height:470px}
+      .services-grid{grid-template-columns:repeat(2,1fr)} .story-grid{grid-template-columns:1fr;gap:34px}
+      .story-image{height:350px} .contact-panel{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .nav-wrap{min-height:68px;padding:0 17px} .container{width:min(100% - 34px,1180px)}
+      .menu-toggle{display:block} .nav-cta{display:none}
+      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:18px 22px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}
+      .nav-links.open{display:flex} .brand-mark{width:40px;height:40px} .brand-name{font-size:13px}
+      .hero{padding:40px 0 24px} .hero-grid{gap:25px} h1{font-size:clamp(43px,13vw,62px);margin:17px 0}
+      .hero-copy{font-size:14px} .hero-actions{display:grid;grid-template-columns:1fr 1fr} .btn{padding:13px 12px;font-size:11px}
+      .hero-visual{min-height:390px;border-radius:19px} .visual-caption{left:20px;bottom:20px} .visual-caption h2{font-size:27px}
+      .section{padding:56px 0} .section-head h2{font-size:39px} .services-grid{gap:10px}
+      .service-card{padding:19px 16px;min-height:192px} .service-no{margin-bottom:20px}
+      .service-card h3{font-size:21px} .service-card p{font-size:11px}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 140px;gap:9px}
+      .gallery-grid figure:first-child{grid-column:span 2;grid-row:auto}
+      .story-image{height:270px} .stats{grid-template-columns:1fr 1fr} .stat:last-child{grid-column:span 2}
+      .contact-panel{padding:23px 19px;border-radius:20px} .contact-panel h2{font-size:39px}
+      .mobile-call{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line);gap:10px}
+      .mobile-call a{flex:1;text-align:center;border-radius:999px;padding:13px;background:var(--accent);color:white;font-size:12px;font-weight:700}
+      footer{padding-bottom:30px} .proof{gap:7px}
+    }
+  
+
+/* ActaKrew premium refresh: shared visual rhythm inspired by The Biryani Mall */
+:root {
+  --site-width: 1160px;
+  --section-space: clamp(76px, 8vw, 112px);
+  --card-radius: 8px;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { line-height: 1.7; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+.container { width: min(var(--site-width), calc(100% - 56px)); margin-inline: auto; }
+.preview-strip {
+  min-height: 34px; display: flex; align-items: center; justify-content: center;
+  padding: 7px 16px; background: var(--dark); color: rgba(255,255,255,.78);
+  text-align: center; font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+}
+.preview-strip b { color: var(--accent2); font-weight: 700; }
+.site-header {
+  position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--paper) 95%, transparent);
+  border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+}
+.nav-wrap {
+  width: min(var(--site-width), calc(100% - 56px)); min-height: 82px; margin-inline: auto;
+  padding: 0; display: flex; align-items: center; justify-content: space-between; gap: 28px;
+}
+.brand { display: inline-flex; align-items: center; gap: 13px; min-width: 0; color: var(--ink); }
+.brand-mark {
+  width: 46px; height: 46px; flex: 0 0 46px; border-radius: 14px;
+  display: grid; place-items: center; background: var(--dark); color: var(--accent2);
+  font: 600 22px/1 var(--serif); box-shadow: 0 7px 20px rgba(0,0,0,.10);
+}
+.brand-name { display: block; color: var(--ink); font-size: 15px; font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
+.brand-sub { display: block; margin-top: 5px; color: var(--muted); font-size: 9px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; justify-content: center; gap: clamp(18px, 2.4vw, 32px); color: var(--muted); font-size: 11px; font-weight: 700; }
+.nav-links a { position: relative; padding: 10px 0; transition: color .2s ease; }
+.nav-links a:not(.nav-cta)::after { position: absolute; right: 0; bottom: 3px; left: 0; height: 1px; content: ''; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .22s ease; }
+.nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
+.nav-links a:not(.nav-cta):hover::after { transform: scaleX(1); }
+.nav-cta, .btn {
+  min-height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  border: 1px solid var(--accent); border-radius: 4px; background: var(--accent); color: #fff;
+  font-size: 10px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+}
+.nav-cta { white-space: nowrap; }
+.nav-cta:hover, .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(0,0,0,.12); }
+.btn.secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.secondary:hover { border-color: var(--accent); color: var(--accent); box-shadow: none; }
+.menu-toggle {
+  display: none; width: 44px; height: 44px; padding: 11px; border: 1px solid var(--line); border-radius: 4px;
+  background: transparent; color: var(--ink); cursor: pointer;
+}
+.menu-toggle span { display: block; height: 1.5px; margin: 5px 0; background: currentColor; transition: transform .2s ease, opacity .2s ease; }
+.menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(6.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-6.5px) rotate(-45deg); }
+.hero { padding: clamp(65px, 7vw, 96px) 0 clamp(64px, 7vw, 90px); overflow: hidden; }
+.hero-grid { width: min(var(--site-width), calc(100% - 56px)); margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(42px, 6vw, 82px); }
+.hero-grid > div:first-child { padding-block: 12px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .18em; line-height: 1.6; text-transform: uppercase; }
+.eyebrow::before { width: 26px; height: 1px; flex: 0 0 26px; content: ''; background: currentColor; }
+h1, h2, h3 { text-wrap: balance; }
+h1 { max-width: 690px; margin: 21px 0 22px; color: var(--ink); font: 600 clamp(48px, 5.5vw, 76px)/1.02 var(--serif); letter-spacing: -.045em; }
+.hero-copy { max-width: 560px; margin: 0 0 29px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.proof { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; margin-top: 30px; color: var(--muted); font-size: 10px; }
+.proof strong { color: var(--ink); font: 600 20px/1 var(--serif); }
+.proof i { width: 1px; height: 24px; margin: 0 7px; background: var(--line); }
+.hero-visual { position: relative; min-height: 500px; overflow: hidden; border-radius: var(--card-radius); background: var(--dark); box-shadow: 0 28px 65px rgba(0,0,0,.16); isolation: isolate; }
+.hero-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .92; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.hero-visual:hover img { transform: scale(1.035); }
+.hero-visual::after { position: absolute; inset: 0; z-index: 1; content: ''; background: linear-gradient(180deg, rgba(0,0,0,.04) 28%, rgba(0,0,0,.72) 100%); pointer-events: none; }
+.floating-tag { position: absolute; z-index: 2; top: 23px; left: 23px; max-width: calc(100% - 46px); padding: 10px 15px; border-radius: 2px; background: var(--paper); color: var(--ink); font-size: 9px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.visual-caption { position: absolute; z-index: 2; right: 30px; bottom: 28px; left: 30px; color: #fff; }
+.visual-caption span { color: var(--accent2); font-size: 9px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.visual-caption h2 { margin: 7px 0 0; color: #fff; font: 600 clamp(30px, 3vw, 42px)/1.06 var(--serif); }
+.info-strip { background: var(--paper); border-block: 1px solid var(--line); }
+.info-grid { width: min(var(--site-width), calc(100% - 56px)); margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); }
+.info-item { min-height: 105px; display: flex; align-items: center; gap: 15px; padding: 20px 28px; border-right: 1px solid var(--line); }
+.info-item:first-child { padding-left: 0; }
+.info-item:last-child { border-right: 0; }
+.info-icon { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; border: 1px solid var(--accent2); border-radius: 50%; color: var(--accent); font-size: 18px; }
+.info-item strong { display: block; color: var(--ink); font-size: 11px; line-height: 1.5; }
+.info-item span { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.section { padding: var(--section-space) 0; }
+.section-head { max-width: 680px; margin-bottom: 42px; }
+.section-head h2, .story-copy h2 { margin: 14px 0 14px; color: var(--ink); font: 600 clamp(38px, 4.3vw, 58px)/1.06 var(--serif); letter-spacing: -.035em; }
+.section-head p { max-width: 600px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.service-card { min-height: 225px; padding: 29px 24px 26px; border: 1px solid var(--line); border-top: 2px solid var(--accent2); border-radius: 3px; background: var(--paper); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.service-card:hover { transform: translateY(-5px); border-top-color: var(--accent); box-shadow: var(--shadow); }
+.service-no { display: inline-block; margin-bottom: 32px; color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .18em; }
+.service-card h3 { margin: 0 0 11px; color: var(--ink); font: 600 23px/1.1 var(--serif); }
+.service-card p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.story { padding-block: var(--section-space); }
+.story-grid { display: grid; grid-template-columns: .96fr 1.04fr; align-items: center; gap: clamp(45px, 7vw, 88px); }
+.story-image { position: relative; height: 480px; overflow: hidden; border-radius: var(--card-radius); background: var(--dark); box-shadow: var(--shadow); }
+.story-image::after { position: absolute; inset: 45% 0 0; content: ''; background: linear-gradient(transparent, rgba(0,0,0,.18)); pointer-events: none; }
+.story-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+.story-image:hover img { transform: scale(1.04); }
+.story-copy { min-width: 0; }
+.story-copy h2 { max-width: 560px; }
+.story-copy > p { max-width: 590px; color: var(--muted); font-size: 13px; line-height: 1.95; }
+.story-copy .eyebrow { color: var(--accent); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 31px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--line); }
+.stat { min-width: 0; padding: 21px 17px; background: var(--paper); }
+.stat strong { display: block; overflow-wrap: anywhere; color: var(--accent); font: 600 25px/1.1 var(--serif); }
+.stat span { display: block; margin-top: 7px; color: var(--muted); font-size: 9px; line-height: 1.5; }
+.gallery-grid { display: grid; grid-template-columns: 1.2fr .9fr .9fr; grid-template-rows: 210px 210px; gap: 14px; }
+.gallery-grid figure { position: relative; min-width: 0; min-height: 0; margin: 0; overflow: hidden; border-radius: 3px; background: var(--dark); }
+.gallery-grid figure:first-child { grid-row: span 2; }
+.gallery-grid figure::after { position: absolute; inset: 55% 0 0; content: ''; background: linear-gradient(transparent, rgba(0,0,0,.2)); pointer-events: none; }
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.gallery-grid figure:hover img { transform: scale(1.05); }
+.gallery-note { margin: 16px 0 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.contact-panel { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(28px, 5vw, 65px); padding: clamp(30px, 4.5vw, 56px); border: 1px solid var(--line); border-radius: 5px; background: var(--paper); box-shadow: 0 18px 55px rgba(0,0,0,.06); }
+.contact-panel h2 { margin: 14px 0; color: var(--ink); font: 600 clamp(38px, 4.2vw, 54px)/1.04 var(--serif); letter-spacing: -.035em; }
+.contact-panel > div:first-child > p { color: var(--muted); font-size: 12px; line-height: 1.9; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+.contact-list { display: grid; gap: 17px; min-width: 0; }
+.contact-item { display: flex; align-items: flex-start; gap: 13px; color: var(--ink); font-size: 11px; line-height: 1.75; overflow-wrap: anywhere; }
+.contact-item small { display: block; margin-bottom: 4px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.contact-icon { width: 36px; height: 36px; flex: 0 0 36px; display: grid; place-items: center; border-radius: 50%; background: var(--bg); color: var(--accent); font-size: 15px; }
+.contact-map { margin-top: 5px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); }
+.contact-map iframe { display: block; width: 100%; height: 190px; border: 0; }
+.contact-map a { display: block; padding: 10px 13px; color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.fineprint { margin-top: 5px; color: var(--muted); font-size: 9px; line-height: 1.6; }
+footer { padding: 0 0 22px; color: rgba(255,255,255,.67); background: var(--dark); }
+.footer-main { width: min(var(--site-width), calc(100% - 56px)); margin-inline: auto; display: grid; grid-template-columns: 1.2fr .75fr 1fr; gap: clamp(35px, 6vw, 75px); padding-block: 62px 48px; }
+.footer-brand .brand { margin-bottom: 18px; }
+.footer-brand .brand-name { color: #fff; }
+.footer-brand .brand-sub { color: rgba(255,255,255,.5); }
+.footer-brand .brand-mark { background: var(--accent); color: #fff; }
+.footer-copy { max-width: 340px; margin: 0; color: rgba(255,255,255,.56); font-size: 11px; line-height: 1.9; }
+.footer-col h4 { margin: 5px 0 20px; color: var(--accent2); font-size: 9px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.footer-links { display: grid; gap: 12px; color: rgba(255,255,255,.7); font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.footer-links a { transition: color .2s ease; }
+.footer-links a:hover { color: var(--accent2); }
+.footer-bottom { width: min(var(--site-width), calc(100% - 56px)); margin-inline: auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.48); font-size: 9px; line-height: 1.7; }
+.footer-bottom strong { color: var(--accent2); font-weight: 700; }
+.mobile-call { display: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 1020px) {
+  .nav-wrap, .hero-grid, .info-grid, .footer-main, .footer-bottom { width: min(900px, calc(100% - 44px)); }
+  .nav-wrap { gap: 16px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 10px; }
+  .hero-grid { gap: 38px; }
+  .hero-visual { min-height: 450px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .story-grid { gap: 40px; }
+  .story-image { height: 420px; }
+  .contact-panel { gap: 30px; }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 76px; }
+  .container, .nav-wrap, .hero-grid, .info-grid, .footer-main, .footer-bottom { width: calc(100% - 36px); }
+  .preview-strip { min-height: 30px; padding-inline: 10px; font-size: 8px; letter-spacing: .11em; }
+  .nav-wrap { min-height: 70px; gap: 12px; }
+  .brand-mark { width: 40px; height: 40px; flex-basis: 40px; border-radius: 12px; }
+  .brand-name { font-size: 13px; }
+  .brand-sub { font-size: 8px; }
+  .menu-toggle { display: block; margin-left: auto; flex: 0 0 44px; }
+  .nav-cta { display: none; }
+  .nav-links { position: absolute; top: 100%; right: 0; left: 0; display: none; align-items: stretch; flex-direction: column; gap: 0; padding: 9px 22px 18px; border-bottom: 1px solid var(--line); background: var(--paper); box-shadow: 0 20px 35px rgba(0,0,0,.12); }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 2px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 11px; }
+  .nav-links a:last-child { border-bottom: 0; }
+  .hero { padding: 54px 0 55px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 31px; }
+  .hero-grid > div:first-child { padding-block: 0; }
+  h1 { max-width: 620px; margin: 16px 0; font-size: clamp(43px, 11.4vw, 66px); line-height: 1.02; }
+  .hero-copy { max-width: 600px; margin-bottom: 24px; font-size: 13px; }
+  .hero-actions { gap: 9px; }
+  .hero-actions .btn { min-height: 46px; padding-inline: 14px; font-size: 9px; }
+  .proof { margin-top: 23px; }
+  .hero-visual { min-height: 390px; border-radius: 5px; }
+  .visual-caption { right: 21px; bottom: 21px; left: 21px; }
+  .info-grid { grid-template-columns: 1fr; padding-block: 7px; }
+  .info-item, .info-item:first-child { min-height: 76px; padding: 13px 1px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .info-item:last-child { border-bottom: 0; }
+  .info-icon { width: 38px; height: 38px; flex-basis: 38px; }
+  .section { padding: 70px 0; }
+  .section-head { margin-bottom: 29px; }
+  .section-head h2, .story-copy h2 { font-size: clamp(37px, 10vw, 48px); }
+  .services-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .service-card { min-height: 190px; padding: 21px 17px; }
+  .service-no { margin-bottom: 22px; }
+  .service-card h3 { font-size: 21px; }
+  .service-card p { font-size: 10px; }
+  .story-grid { grid-template-columns: 1fr; gap: 29px; }
+  .story-image { height: 330px; }
+  .story-copy > p { font-size: 12px; }
+  .stats { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .stat { padding: 16px 11px; }
+  .stat strong { font-size: 21px; }
+  .stat span { font-size: 8px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 210px 150px; gap: 9px; }
+  .gallery-grid figure:first-child { grid-column: 1 / -1; grid-row: auto; }
+  .contact-panel { grid-template-columns: 1fr; gap: 25px; padding: 26px 20px; }
+  .contact-panel h2 { font-size: 42px; }
+  .contact-actions .btn { min-height: 45px; padding-inline: 14px; font-size: 9px; }
+  .contact-map iframe { height: 170px; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 30px 23px; padding-block: 43px 31px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-col h4 { margin-bottom: 14px; }
+  .footer-bottom { padding-bottom: 17px; }
+  .mobile-call { position: fixed; right: 0; bottom: 0; left: 0; z-index: 40; display: flex; gap: 9px; padding: 9px 13px calc(9px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 96%, transparent); backdrop-filter: blur(14px); }
+  .mobile-call a { min-height: 44px; flex: 1; display: flex; align-items: center; justify-content: center; border: 1px solid var(--accent); border-radius: 3px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .mobile-call a:last-child { background: transparent; color: var(--ink); border-color: var(--line); }
+  footer { padding-bottom: 75px; }
+}
+@media (max-width: 390px) {
+  .container, .nav-wrap, .hero-grid, .info-grid, .footer-main, .footer-bottom { width: calc(100% - 28px); }
+  .brand { gap: 9px; }
+  .brand-name { font-size: 12px; }
+  .brand-sub { font-size: 7px; letter-spacing: .12em; }
+  .hero-visual { min-height: 330px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { min-height: 150px; }
+  .service-no { margin-bottom: 15px; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:last-child { grid-column: 1 / -1; }
+  .gallery-grid { grid-template-rows: 180px 125px; }
+  .footer-main { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+</style>
+</head>
+<body>
+<div class="preview-strip"><b>ActaKrew website concept</b>  |  Private presentation draft · For review only</div>
+<header class="site-header">
+<div class="nav-wrap">
+<a aria-label="The Capetown Cafe home" class="brand" href="#top">
+<span class="brand-mark">CC</span>
+<span><span class="brand-name">The Capetown Cafe</span><span class="brand-sub">Patna, Bihar</span></span>
+</a>
+<nav aria-label="Main navigation" class="nav-links" id="mainNav">
+<a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+</nav>
+<a class="nav-cta" href="tel:+919065663666">Call now ↗</a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">A contemporary cafe for food, conversations and catch-ups.</span>
+<h1>Good food. Easy company. Better conversations.</h1>
+<p class="hero-copy">A proposed cafe website with a browsable menu, location details and table enquiry flow.</p>
+<div class="hero-actions">
+<a class="btn" href="tel:+919065663666">Plan your visit <span aria-hidden="true">↗</span></a>
+<a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=The+Capetown+Cafe%2C+2nd+Floor%2C+Sumitra+Palace%2C+Atal+Path%2C+Harihar+Path%2C+Mahesh+Nagar%2C+Keshri+Nagar%2C+Patna%2C+Bihar+800024%2C+India" rel="noopener" target="_blank">Get directions ↗</a>
+</div>
+<div class="proof"><strong>4.5/5</strong><span>Google Maps rating</span><i></i><strong>2,229</strong><span>public reviews</span></div>
+</div>
+<div class="hero-visual">
+<img alt="Illustrative visual for The Capetown Cafe" fetchpriority="high" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=1800&amp;q=85"/>
+<span class="floating-tag">Patna • Cafe / multi-cuisine restaurant</span>
+<div class="visual-caption"><span>Discover the experience</span><h2>The Capetown Cafe</h2></div>
+</div>
+</div>
+</section><section aria-label="The Capetown Cafe quick information" class="info-strip"><div class="info-grid"><div class="info-item"><div class="info-icon">✦</div><div><strong>Discover the experience</strong><span>Patna • Cafe / multi-cuisine restaurant</span></div></div><div class="info-item"><div class="info-icon">◷</div><div><strong>4.5/5 Google rating</strong><span>2,229 public reviews</span></div></div><div class="info-item"><div class="info-icon">⌖</div><div><strong>Harihar Path</strong><span>Patna location</span></div></div></div></section>
+<section class="section" id="services">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">What you can explore</span>
+<h2>Designed around what matters.</h2>
+<p>A clear overview helps visitors understand the experience, find the right service and take the next step without searching through scattered listings.</p>
+</div>
+<div class="services-grid"><article class="service-card"><span class="service-no">001</span><h3>North Indian favourites</h3><p>A selection of familiar mains and comfort dishes.</p></article>
+<article class="service-card"><span class="service-no">002</span><h3>Chinese &amp; continental</h3><p>A dedicated space for multi-cuisine favourites.</p></article>
+<article class="service-card"><span class="service-no">003</span><h3>Cafe &amp; beverages</h3><p>Coffee, coolers and cafe-style refreshments.</p></article>
+<article class="service-card"><span class="service-no">004</span><h3>Dine-in &amp; gatherings</h3><p>Help guests find the cafe, explore the menu and enquire about a visit.</p></article></div>
+</div>
+</section>
+<section class="section story" id="about">
+<div class="container story-grid">
+<div class="story-image"><img alt="Illustrative detail image for The Capetown Cafe" loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></div>
+<div class="story-copy">
+<span class="eyebrow">A better first impression</span>
+<h2>A digital space that feels like your brand.</h2>
+<p>A proposed cafe website with a browsable menu, location details and table enquiry flow. This concept is structured to make the brand story, key offerings and contact details easy to find on every screen.</p>
+<div class="stats"><div class="stat"><strong>4.5/5</strong><span>Google Maps rating</span></div>
+<div class="stat"><strong>2,229</strong><span>Google reviews</span></div>
+<div class="stat"><strong>Harihar Path</strong><span>Patna location</span></div></div>
+</div>
+</div>
+</section>
+<section class="section" id="gallery">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">Visual experience</span>
+<h2>Let the experience speak.</h2>
+<p>Use this gallery area for real business photos, signature services, venue spaces, dishes, classes or customer-approved work samples.</p>
+</div>
+<div class="gallery-grid">
+<figure><img alt="Illustrative concept gallery image for The Capetown Cafe" loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></figure>
+<figure><img alt="Illustrative concept image for The Capetown Cafe" loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></figure>
+<figure><img alt="Illustrative concept image for The Capetown Cafe" loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=1800&amp;q=85"/></figure>
+</div>
+<p class="gallery-note">Photographs are illustrative concept imagery. Replace with owner-approved business photos before launch.</p>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="container">
+<div class="contact-panel">
+<div>
+<span class="eyebrow">Find us in Patna</span>
+<h2>Start with a conversation.</h2>
+<p>Call to confirm current services, availability and opening hours. Use the map link for directions to the listed location.</p>
+<div class="contact-actions">
+<a class="btn" href="tel:+919065663666">Call +91 90656 63666</a>
+<a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=The+Capetown+Cafe%2C+2nd+Floor%2C+Sumitra+Palace%2C+Atal+Path%2C+Harihar+Path%2C+Mahesh+Nagar%2C+Keshri+Nagar%2C+Patna%2C+Bihar+800024%2C+India" rel="noopener" target="_blank">Open Google Maps</a>
+</div>
+</div>
+<div class="contact-list">
+<div class="contact-item"><span class="contact-icon">⌖</span><div><small>Address</small>2nd Floor, Sumitra Palace, Atal Path, Harihar Path, Mahesh Nagar, Keshri Nagar, Patna, Bihar 800024, India</div></div>
+<div class="contact-item"><span class="contact-icon">☎</span><div><small>Phone</small><a href="tel:+919065663666">+91 90656 63666</a></div></div>
+<div class="contact-item"><span class="contact-icon">◷</span><div><small>Listed opening hours</small>Daily 11:00 AM-11:00 PM<div class="fineprint">Opening hours can change. Please call to confirm.</div></div></div>
+<div class="contact-map"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=The%20Capetown%20Cafe%2C%202nd%20Floor%2C%20Sumitra%20Palace%2C%20Atal%20Path%2C%20Harihar%20Path%2C%20Mahesh%20Nagar%2C%20Keshri%20Nagar%2C%20Patna%2C%20Bihar%20800024%2C%20India&amp;output=embed" title="Map location for The Capetown Cafe, Patna"></iframe><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Capetown+Cafe%2C+2nd+Floor%2C+Sumitra+Palace%2C+Atal+Path%2C+Harihar+Path%2C+Mahesh+Nagar%2C+Keshri+Nagar%2C+Patna%2C+Bihar+800024%2C+India" rel="noopener" target="_blank">Open location in Google Maps ↗</a></div></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a aria-label="The Capetown Cafe home" class="brand" href="#top"><span class="brand-mark">CC</span><span><span class="brand-name">The Capetown Cafe</span><span class="brand-sub">Patna · Bihar</span></span></a><p class="footer-copy">A proposed cafe website with a browsable menu, location details and table enquiry flow. Explore the experience, discover key information and connect directly.</p></div><div class="footer-col"><h4>Explore</h4><div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact &amp; directions</a></div></div><div class="footer-col"><h4>Get in touch</h4><div class="footer-links"><a href="tel:+919065663666">+91 90656 63666</a><span>2nd Floor, Sumitra Palace, Atal Path, Harihar Path, Mahesh Nagar, Keshri Nagar, Patna, Bihar 800024, India</span><span>Listed hours: Daily 11:00 AM-11:00 PM</span><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Capetown+Cafe%2C+2nd+Floor%2C+Sumitra+Palace%2C+Atal+Path%2C+Harihar+Path%2C+Mahesh+Nagar%2C+Keshri+Nagar%2C+Patna%2C+Bihar+800024%2C+India" rel="noopener" target="_blank">Open in Google Maps ↗</a></div></div></div><div class="footer-bottom"><span>© <span class="year">2026</span> The Capetown Cafe. Website concept prepared by ActaKrew.</span><span>Preview concept only. <strong>Business details and photos to be owner-confirmed before publication.</strong></span></div></footer>
+<div class="mobile-call"><a href="tel:+919065663666">Call now</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Capetown+Cafe%2C+2nd+Floor%2C+Sumitra+Palace%2C+Atal+Path%2C+Harihar+Path%2C+Mahesh+Nagar%2C+Keshri+Nagar%2C+Patna%2C+Bihar+800024%2C+India" rel="noopener" target="_blank">Get directions</a></div>
+<script>
+(() => {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation');
+    }));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation');
+        toggle.focus();
+      }
+    });
+  }
+  document.querySelectorAll('.year').forEach(node => node.textContent = new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
