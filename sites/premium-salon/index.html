@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c0c0e">
+<title>Maison Élan | Premium Beauty Studio Concept</title>
+<meta name="description" content="A premium beauty salon concept preview for hair, skin, makeup and nail services in Patna.">
+<style>
+:root{--bg:#0c0c0e;--panel:#151518;--panel2:#1d1b1d;--ink:#f4eee8;--muted:#aaa19a;--gold:#d0a77d;--gold2:#f0d7bb;--line:#ffffff20;--serif:Georgia,'Times New Roman',serif;--sans:Arial,sans-serif;--max:1400px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--sans)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}img{display:block;max-width:100%;object-fit:cover}.wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
+.announcement{padding:8px 12px;text-align:center;text-transform:uppercase;letter-spacing:.18em;font-size:9px;color:#d5c1ad;border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:30;background:#0c0c0eea;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;gap:11px;align-items:center}.monogram{border:1px solid var(--gold);border-radius:50%;width:39px;height:39px;display:grid;place-items:center;color:var(--gold);font:22px var(--serif)}.brand b{font:21px var(--serif);letter-spacing:.1em}.brand small{display:block;color:var(--muted);font-size:8px;letter-spacing:.25em;text-transform:uppercase}.links{display:flex;gap:23px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#d9d0c9}.links a:hover{color:var(--gold)}.btn{border:1px solid var(--gold);background:var(--gold);color:#17110d;padding:13px 19px;font-size:10px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:.25s}.btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--ink)}.btn.ghost:hover{background:var(--gold);color:#17110d}.menu{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);padding:9px 12px}
+.hero{padding:50px 0 78px;display:grid;grid-template-columns:.92fr 1.08fr;gap:55px;align-items:center;min-height:680px}.eyebrow,.kicker{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:15px}.eyebrow:before{content:'';display:inline-block;width:34px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px}
+h1,h2,h3,p{margin-top:0}h1{font:clamp(50px,6.5vw,88px)/.98 var(--serif);font-weight:normal;letter-spacing:-.035em;margin:18px 0 25px}h1 em,h2 em{color:var(--gold);font-weight:normal}.lead{max-width:500px;color:#bdb3ab;font-size:14px;line-height:1.9}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.proof{display:flex;gap:26px;border-top:1px solid var(--line);padding-top:20px;max-width:500px}.proof strong{display:block;font:24px var(--serif);color:var(--gold2)}.proof span{font-size:9px;color:var(--muted);letter-spacing:.13em;text-transform:uppercase}
+.hero-media{height:575px;position:relative}.hero-main{position:absolute;inset:0 36px 30px 58px;overflow:hidden;background:#312a26}.hero-main img{width:100%;height:100%;filter:saturate(.72);transition:1s}.hero-main:hover img{transform:scale(1.04)}.seal{position:absolute;left:0;top:58px;width:112px;height:112px;border-radius:50%;background:var(--gold);color:#17110d;display:grid;place-items:center;text-align:center;font:17px/1.18 var(--serif);transform:rotate(-11deg)}.hero-label{position:absolute;right:0;bottom:0;background:#19171a;border:1px solid var(--line);padding:18px 21px;width:235px}.hero-label small{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.hero-label b{display:block;font:21px var(--serif);margin:5px 0}
+.section{padding:100px 0}.dark{background:#111114}.soft{background:#181619}.head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:38px}.head h2,.editorial h2,.faq-intro h2,.cta h2{font:clamp(37px,4.6vw,62px)/1.04 var(--serif);font-weight:normal;max-width:690px;margin:0}.intro{max-width:410px;color:var(--muted);font-size:12px;line-height:1.9;margin:0}
+.filters{display:flex;gap:7px;flex-wrap:wrap;border-block:1px solid var(--line);padding:13px 0;margin-bottom:12px}.filter{background:transparent;color:#c9c0b9;border:1px solid var(--line);padding:8px 12px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}.filter.active,.filter:hover{background:var(--gold);color:#16100c;border-color:var(--gold)}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:0 35px}.service{display:grid;grid-template-columns:86px 1fr auto;gap:15px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line)}.service img{width:86px;height:86px}.service h3{font:21px var(--serif);margin:0 0 4px}.service p{font-size:10px;color:var(--muted);margin:0;max-width:350px}.service .price{text-align:right;color:var(--gold);font:18px var(--serif);white-space:nowrap}.service .price small{display:block;color:var(--muted);font:9px var(--sans)}.more{display:block;margin:25px auto 0;background:none;border:0;border-bottom:1px solid var(--gold);color:var(--gold);padding:10px 0;letter-spacing:.15em;text-transform:uppercase;font-size:10px;cursor:pointer}
+.marquee{padding:17px 0;white-space:nowrap;overflow:hidden;color:var(--gold);font:22px var(--serif);letter-spacing:.06em;border-block:1px solid var(--line)}.marquee span{padding-right:30px}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.person{background:#1a191b;padding:9px;border:1px solid var(--line);transition:.3s}.person:hover{transform:translateY(-5px);border-color:#927250}.person img{width:100%;height:275px}.person div{padding:14px 9px}.person small{color:var(--gold);font-size:8px;letter-spacing:.2em;text-transform:uppercase}.person h3{font:22px var(--serif);margin:6px 0 2px}.person p{font-size:10px;color:var(--muted);margin:0}
+.editorial{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.editorial-img{height:520px;position:relative}.editorial-img img{width:100%;height:100%}.editorial-img:after{content:'';position:absolute;inset:13px -13px -13px 13px;border:1px solid var(--gold);z-index:0;pointer-events:none}.editorial p{color:var(--muted);font-size:12px;line-height:2;margin:22px 0}.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}.values div{border-top:1px solid var(--line);padding-top:10px}.values strong{display:block;font:19px var(--serif);color:var(--gold2)}.values span{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.testimonial{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:center}.rating{font:clamp(62px,8vw,98px)/1 var(--serif);color:var(--gold)}.stars{color:var(--gold);letter-spacing:.2em;margin:9px 0}.disclaimer{font-size:10px;color:var(--muted);max-width:280px}.quote{padding:35px 40px;background:#1c1a1d;border:1px solid var(--line)}.quote-mark{font:65px var(--serif);color:var(--gold);line-height:.6}.quote blockquote{font:clamp(20px,2.5vw,29px)/1.45 var(--serif);margin:23px 0}.quote-foot{border-top:1px solid var(--line);padding-top:15px;display:flex;justify-content:space-between;align-items:center}.quote-foot small{color:var(--muted);font-size:9px}.quote-foot b{font:17px var(--serif)}.arrows{display:flex;gap:7px}.arrows button{height:36px;width:36px;background:none;border:1px solid var(--line);color:var(--ink);cursor:pointer}.arrows button:hover{background:var(--gold);color:#16100c}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:#201d20;padding:10px;border:1px solid var(--line)}.product img{width:100%;height:225px}.product div{display:flex;justify-content:space-between;gap:10px;padding:15px 5px 5px}.product h3{font:19px var(--serif);margin:0}.product p{font-size:9px;color:var(--muted);margin:4px 0}.product b{font:17px var(--serif);color:var(--gold);white-space:nowrap}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:180px 180px;gap:11px}.gallery img{height:100%;width:100%;filter:saturate(.72)}.gallery .tall{grid-row:span 2}
+.faq{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}.faq-intro p{color:var(--muted);font-size:12px;line-height:1.9;margin:20px 0}.faq-item{border-top:1px solid var(--line)}.faq-item:last-child{border-bottom:1px solid var(--line)}.question{border:0;background:none;color:var(--ink);width:100%;display:flex;justify-content:space-between;gap:20px;padding:19px 0;text-align:left;font:19px var(--serif);cursor:pointer}.question span:last-child{color:var(--gold);font:21px var(--sans);transition:.2s}.answer{max-height:0;overflow:hidden;color:var(--muted);font-size:11px;line-height:1.85;transition:max-height .3s}.faq-item.open .answer{max-height:150px;padding:0 25px 18px 0}.faq-item.open .question span:last-child{transform:rotate(45deg)}
+.cta{padding:64px 0;background:linear-gradient(115deg,#2b211a,#191719 60%,#28201c);border-block:1px solid #7c6042}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
+footer{background:#080809;padding:60px 0 22px}.foot-grid{display:grid;grid-template-columns:1.3fr .7fr .8fr 1fr;gap:30px;padding-bottom:40px}.foot-grid h4{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:5px 0 18px}.foot-grid p,.foot-grid a{font-size:10px;color:var(--muted);display:block;margin:9px 0}.foot-note{max-width:280px;line-height:1.9;margin-top:16px!important}.bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:12px;color:#736c68;font-size:9px}
+.modal-bg{display:none;position:fixed;inset:0;background:#000c;z-index:100;align-items:center;justify-content:center;padding:15px}.modal-bg.show{display:flex}.modal{width:min(700px,100%);max-height:92vh;overflow:auto;background:#19171a;border:1px solid #846746;padding:26px}.modal-head{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:18px}.modal-head h2{font:32px var(--serif);margin:0}.close{background:none;border:1px solid var(--line);color:var(--ink);width:35px;height:35px;cursor:pointer}.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.step{border:1px solid var(--line);padding:7px 10px;color:var(--muted);font-size:8px;letter-spacing:.12em}.step.active{border-color:var(--gold);color:var(--gold)}.field label{display:block;color:var(--muted);font-size:9px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:12px;background:#0e0d0f;border:1px solid var(--line);color:var(--ink)}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.modal-foot{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-top:20px}.modal-note{color:#8c827b;font-size:9px;line-height:1.6;margin-top:18px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:var(--gold);color:#15100c;padding:12px 18px;font-size:11px;opacity:0;transition:.25s;z-index:200;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1050px){.links{gap:13px}.hero{gap:25px}.hero-media{height:500px}.team{grid-template-columns:repeat(2,1fr)}.person img{height:320px}.section{padding:80px 0}.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}nav{height:65px}.brand b{font-size:17px}.brand small{font-size:7px}.links{display:none;position:absolute;top:65px;left:0;right:0;background:#111114;padding:15px 20px;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{padding:11px 0}.nav>.btn{display:none}.menu{display:block}
+.hero{grid-template-columns:1fr;padding:38px 0 60px;gap:23px}.hero-media{height:395px}.hero-main{inset:0 20px 25px 25px}.seal{width:88px;height:88px;font-size:12px;top:30px}.hero-label{width:185px;padding:13px}.hero-label b{font-size:17px}.proof{gap:15px}.proof strong{font-size:19px}.proof span{font-size:8px}
+.section{padding:65px 0}.head{display:block;margin-bottom:27px}.intro{margin-top:16px}.services{grid-template-columns:1fr}.service{grid-template-columns:72px 1fr auto;gap:11px;padding:13px 0}.service img{width:72px;height:72px}.service h3{font-size:17px}.service p{font-size:9px}.service .price{font-size:16px}.team{grid-template-columns:1fr 1fr;gap:9px}.person{padding:6px}.person img{height:200px}.person div{padding:10px 5px}.person h3{font-size:17px}.person p{font-size:9px}
+.editorial{grid-template-columns:1fr;gap:35px}.editorial-img{height:350px;margin-right:12px}.testimonial{grid-template-columns:1fr;gap:25px}.rating{font-size:64px}.quote{padding:25px}.quote blockquote{font-size:22px}.products{grid-template-columns:1fr 1fr;gap:9px}.product{padding:7px}.product img{height:155px}.product div{display:block;padding:10px 4px}.product h3{font-size:16px}.product b{display:block;margin-top:7px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:210px 135px}.gallery .tall{grid-row:span 2}.faq{grid-template-columns:1fr;gap:22px}.question{font-size:17px}.cta-inner{display:block}.cta .btn{margin-top:22px}.foot-grid{grid-template-columns:1fr 1fr;gap:25px}.foot-grid>div:first-child{grid-column:span 2}.bottom{flex-direction:column}.field-grid{grid-template-columns:1fr}}
+@media(max-width:390px){.hero-media{height:330px}.hero-label{width:160px}.team .person img{height:170px}.products{grid-template-columns:1fr}.product img{height:205px}.proof{gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+/* ---- Visual refinement pass: softer geometry, crafted surfaces, less rigid UI ---- */
+:root{
+  --line:rgba(239,220,202,.11);
+  --gold:#d7b18c;
+  --gold2:#f2dfcc;
+}
+body{
+  background:
+    radial-gradient(ellipse at 12% 4%,rgba(173,128,88,.075),transparent 34rem),
+    radial-gradient(ellipse at 90% 42%,rgba(121,85,75,.055),transparent 32rem),
+    var(--bg);
+}
+header{box-shadow:0 10px 35px rgba(0,0,0,.18)}
+nav{padding-inline:4px}
+.btn{
+  border-radius:999px;
+  padding:13px 21px;
+  box-shadow:0 7px 22px rgba(208,167,125,.10);
+}
+.btn.ghost{box-shadow:none;border-color:rgba(215,177,140,.55)}
+.menu{border-radius:12px}
+.hero-media{isolation:isolate}
+.hero-main{
+  border-radius:28px 28px 28px 8px;
+  box-shadow:0 28px 75px rgba(0,0,0,.34);
+}
+.hero-main img{border-radius:inherit}
+.seal{
+  border:5px solid rgba(12,12,14,.82);
+  box-shadow:0 12px 35px rgba(0,0,0,.25);
+}
+.hero-label{
+  border:1px solid rgba(239,220,202,.15);
+  border-radius:18px;
+  box-shadow:0 18px 45px rgba(0,0,0,.34);
+}
+.filters{border-color:transparent;padding:8px 0 17px}
+.filter{
+  border-radius:999px;
+  padding:9px 16px;
+  background:rgba(255,255,255,.025);
+  transition:background .22s,border-color .22s,color .22s,transform .22s;
+}
+.filter:hover{transform:translateY(-1px)}
+.services{gap:10px 28px}
+.service{
+  border:1px solid rgba(239,220,202,.075);
+  border-radius:18px;
+  padding:13px;
+  background:linear-gradient(135deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+  box-shadow:0 8px 24px rgba(0,0,0,.10);
+  transition:border-color .25s,background .25s,transform .25s,box-shadow .25s;
+}
+.service:hover{
+  border-color:rgba(215,177,140,.36);
+  background:linear-gradient(135deg,rgba(215,177,140,.09),rgba(255,255,255,.018));
+  transform:translateY(-2px);
+  box-shadow:0 14px 34px rgba(0,0,0,.19);
+}
+.service img{border-radius:13px}
+.service h3{letter-spacing:-.015em}
+.more{border-radius:999px;padding:11px 18px}
+.person{
+  border:1px solid rgba(239,220,202,.09);
+  border-radius:21px;
+  overflow:hidden;
+  padding:8px;
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));
+  box-shadow:0 12px 34px rgba(0,0,0,.15);
+}
+.person img{border-radius:15px}
+.person div{padding:15px 10px 13px}
+.person:hover{box-shadow:0 20px 45px rgba(0,0,0,.26)}
+.editorial-img{border-radius:24px;z-index:0}
+.editorial-img img{border-radius:24px}
+.editorial-img:after{border-radius:24px;inset:12px -12px -12px 12px}
+.values div{border-top-color:rgba(239,220,202,.15)}
+.quote{
+  border-radius:24px;
+  background:linear-gradient(145deg,#211e20,#171619 75%);
+  box-shadow:0 22px 55px rgba(0,0,0,.22);
+}
+.quote-foot .arrows button{border-radius:50%}
+.product{
+  border-radius:21px;
+  overflow:hidden;
+  background:linear-gradient(145deg,#242024,#191719);
+  box-shadow:0 12px 35px rgba(0,0,0,.15);
+  transition:transform .28s,border-color .28s,box-shadow .28s;
+}
+.product:hover{transform:translateY(-5px);border-color:rgba(215,177,140,.35);box-shadow:0 22px 45px rgba(0,0,0,.25)}
+.product img{border-radius:14px}
+.gallery{border-radius:22px;overflow:hidden;gap:12px}
+.gallery img{border-radius:15px}
+.faq-item{border-color:rgba(239,220,202,.13)}
+.question{border-radius:12px}
+.faq-item.open .answer{padding-left:14px}
+.cta{border-radius:0}
+.cta-inner .btn{box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.foot-grid .btn{margin-top:8px}
+.modal{
+  border-radius:25px;
+  box-shadow:0 30px 100px rgba(0,0,0,.55);
+  background:linear-gradient(145deg,#211e20,#151417);
+}
+.close{border-radius:50%}
+.step{border-radius:999px}
+.field input,.field select,.field textarea{
+  border-radius:12px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:rgba(215,177,140,.7);
+  box-shadow:0 0 0 3px rgba(215,177,140,.10);
+}
+.toast{border-radius:999px;box-shadow:0 12px 32px rgba(0,0,0,.28)}
+@media(max-width:760px){
+  .hero-main{border-radius:23px 23px 23px 7px}
+  .hero-label{border-radius:15px}
+  .service{border-radius:15px;padding:10px}
+  .service img{border-radius:11px}
+  .person{border-radius:17px;padding:6px}
+  .person img{border-radius:12px}
+  .product{border-radius:17px}
+  .product img{border-radius:12px}
+  .quote{border-radius:19px}
+  .editorial-img,.editorial-img img{border-radius:19px}
+  .gallery{gap:8px;border-radius:17px}
+  .gallery img{border-radius:11px}
+  .modal{border-radius:20px;padding:21px}
+  .filters{gap:6px}
+  .filter{padding:8px 13px}
+}
+
+</style></head>
+<body>
+<div class="announcement">A considered approach to beauty · Patna, India · Concept preview</div>
+<header><nav class="wrap">
+<a class="brand" href="#home"><span class="monogram">É</span><span><b>MAISON ÉLAN</b><small>Beauty · Hair · Skin</small></span></a>
+<div class="links" id="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#experts">Artists</a><a href="#reviews">Reviews</a><a href="#studio">Studio</a><a href="#faq">FAQ</a></div>
+<button class="btn" onclick="openBooking()">Book a visit ↗</button><button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</nav></header>
+<main>
+<section class="wrap hero" id="home"><div>
+<div class="eyebrow">The art of feeling like yourself</div><h1>Beauty, with a little more <em>intention.</em></h1>
+<p class="lead">A thoughtful salon experience for hair, skin and self-care. Discover considered treatments, personal consultations and a studio atmosphere designed around you.</p>
+<div class="actions"><button class="btn" onclick="openBooking()">Discover your visit ↗</button><a class="btn ghost" href="#services">Explore services</a></div>
+<div class="proof"><div><strong>01 : 01</strong><span>Personal attention</span></div><div><strong>By you</strong><span>Beauty, your way</span></div><div><strong>Élan</strong><span>Quiet confidence</span></div></div>
+</div><div class="hero-media"><div class="hero-main"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1300&q=88" alt="Editorial beauty portrait"></div><div class="seal">A little<br>ritual<br>for you</div><div class="hero-label"><small>Make space for yourself</small><b>Your moment, made personal.</b><span style="font-size:10px;color:var(--muted)">Hair · Skin · Makeup · Nails</span></div></div>
+</section>
+<section class="section dark" id="services"><div class="wrap">
+<div class="head"><div><div class="kicker">The service edit</div><h2>Rituals for every <em>version of you.</em></h2></div><p class="intro">From a fresh cut to a considered skin ritual, explore a curated menu designed to help you find the right service for the moment you're in.</p></div>
+<div class="filters"><button class="filter active" data-filter="all">All services</button><button class="filter" data-filter="hair">Hair</button><button class="filter" data-filter="skin">Skin</button><button class="filter" data-filter="makeup">Makeup</button><button class="filter" data-filter="nails">Nails</button><button class="filter" data-filter="body">Body</button></div>
+<div class="services" id="servicesGrid">
+<article class="service" data-cat="hair"><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=300&q=80" alt="Haircut and styling"><div><h3>Signature Haircut & Finish</h3><p>Consultation, precision cut and a polished finish shaped around your texture and lifestyle.</p></div><div class="price">Enquire<small>45–75 min</small></div></article>
+<article class="service" data-cat="hair"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=300&q=80" alt="Hair colour"><div><h3>Colour & Dimension</h3><p>Personalised colour direction, gloss and dimension. Consultation recommended.</p></div><div class="price">Enquire<small>90–180 min</small></div></article>
+<article class="service" data-cat="skin"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=300&q=80" alt="Facial"><div><h3>Signature Facial</h3><p>A skin-first reset with a consultation-led approach to cleansing, hydration and care.</p></div><div class="price">Enquire<small>50–75 min</small></div></article>
+<article class="service" data-cat="makeup"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=300&q=80" alt="Makeup artistry"><div><h3>Occasion Makeup</h3><p>Soft, elevated or statement looks, planned around your event and personal style.</p></div><div class="price">Enquire<small>60–90 min</small></div></article>
+<article class="service" data-cat="nails"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=300&q=80" alt="Manicure"><div><h3>Manicure & Nail Care</h3><p>Thoughtful shaping, cuticle care and a finish that feels quietly put together.</p></div><div class="price">Enquire<small>40–60 min</small></div></article>
+<article class="service" data-cat="body"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=300&q=80" alt="Spa ritual"><div><h3>Relaxation Ritual</h3><p>A restorative pause with a calm, consultation-led approach to self-care.</p></div><div class="price">Enquire<small>45–75 min</small></div></article>
+<article class="service extra" data-cat="hair" hidden><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=300&q=80" alt="Hair treatment"><div><h3>Hair Repair Ritual</h3><p>Targeted conditioning and care for softness, manageability and shine.</p></div><div class="price">Enquire<small>45–60 min</small></div></article>
+<article class="service extra" data-cat="skin" hidden><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=300&q=80" alt="Skin care"><div><h3>Skin Consultation</h3><p>A one-to-one conversation to understand your goals and discuss suitable services.</p></div><div class="price">Enquire<small>20–30 min</small></div></article>
+</div><button class="more" id="more">Show more services ↓</button>
+</div></section>
+<div class="marquee"><span>CARE THAT FEELS PERSONAL　✳　BEAUTY WITHOUT THE NOISE　✳　A MOMENT FOR YOU　✳　</span><span>CARE THAT FEELS PERSONAL　✳　BEAUTY WITHOUT THE NOISE　✳　</span></div>
+<section class="section" id="experts"><div class="wrap"><div class="head"><div><div class="kicker">The people behind the detail</div><h2>Good hands. <em>Good energy.</em></h2></div><p class="intro">A great salon visit is personal. Meet the specialists who listen first, recommend thoughtfully and make every detail feel considered.</p></div>
+<div class="team">
+<article class="person"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=85" alt="Hair artist concept portrait"><div><small>Hair artistry</small><h3>Hair specialist</h3><p>Cut · Colour · Finish</p></div></article>
+<article class="person"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=85" alt="Skin specialist concept portrait"><div><small>Skin & care</small><h3>Skin specialist</h3><p>Facials · Consultation</p></div></article>
+<article class="person"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=85" alt="Makeup artist concept portrait"><div><small>Makeup artistry</small><h3>Makeup artist</h3><p>Occasion · Bridal enquiries</p></div></article>
+<article class="person"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Nail artist concept portrait"><div><small>Nail care</small><h3>Nail specialist</h3><p>Manicure · Nail finish</p></div></article>
+</div></div></section>
+<section class="section dark" id="studio"><div class="wrap editorial">
+<div class="editorial-img"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1100&q=88" alt="Modern salon interior concept"></div>
+<div><div class="kicker">A space to exhale</div><h2 class="editorial">Considered details. <em>Unhurried care.</em></h2><p>From the first conversation to the finishing touch, the experience should feel welcoming, attentive and easy to navigate. This concept is built around clear service discovery, specialist-led guidance and a simple route to enquire.</p>
+<div class="values"><div><strong>01</strong><span>Listen & understand</span></div><div><strong>02</strong><span>Recommend thoughtfully</span></div><div><strong>03</strong><span>Care with intention</span></div><div><strong>04</strong><span>Leave refreshed</span></div></div><a href="#services" class="btn ghost">Explore services ↗</a></div>
+</div></section>
+<section class="section" id="reviews"><div class="wrap testimonial"><div><div class="kicker">The experience matters</div><div class="rating">Loved.</div><div class="stars">★★★★★</div><p class="disclaimer">Review area preview. Replace with real, permissioned customer reviews before publishing.</p></div>
+<div class="quote"><div class="quote-mark">“</div><blockquote id="quote">The best kind of salon visit is one where you feel heard, looked after and completely yourself.</blockquote><div class="quote-foot"><div><b id="quoteName">A note on the experience</b><br><small id="quoteNote">Illustrative copy · not a customer testimonial</small></div><div class="arrows"><button id="prev" aria-label="Previous quote">←</button><button id="next" aria-label="Next quote">→</button></div></div></div></div></section>
+<section class="section soft" id="products"><div class="wrap"><div class="head"><div><div class="kicker">The little things we love</div><h2>The aftercare <em>edit.</em></h2></div><p class="intro">An optional product shelf for salon-recommended care. Add only products actually stocked and approved by the business before launch.</p></div>
+<div class="products">
+<article class="product"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=650&q=85" alt="Skincare still life"><div><span><h3>Skin essentials</h3><p>Curated care for your routine</p></span><b>Explore</b></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?auto=format&fit=crop&w=650&q=85" alt="Hair care products"><div><span><h3>Hair rituals</h3><p>Care beyond the salon</p></span><b>Explore</b></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=650&q=85" alt="Beauty serum"><div><span><h3>Everyday glow</h3><p>Small rituals, considered well</p></span><b>Explore</b></div></article>
+</div></div></section>
+<section class="section dark" id="gallery"><div class="wrap"><div class="head"><div><div class="kicker">The studio, in details</div><h2>Beauty lives in the <em>small moments.</em></h2></div><p class="intro">A visual story area for the real team, salon spaces and service moments. Replace concept imagery with owner-approved photographs.</p></div>
+<div class="gallery"><img class="tall" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85" alt="Salon styling station"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=85" alt="Spa treatment room"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=85" alt="Salon interior"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=700&q=85" alt="Skin care treatment"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=85" alt="Beauty detail"></div>
+</div></section>
+<section class="section" id="faq"><div class="wrap faq"><div class="faq-intro"><div class="kicker">A few helpful details</div><h2>Good to know <em>before you visit.</em></h2><p>Have a question that isn't here? Send an enquiry and the studio team can guide you. Replace draft answers with confirmed salon policies.</p><button class="btn ghost" onclick="openBooking()">Make an enquiry ↗</button></div>
+<div>
+<div class="faq-item open"><button class="question"><span>How do I choose the right service?</span><span>+</span></button><div class="answer">Start with the result you have in mind. The team can guide you through suitable options and recommend a consultation when needed.</div></div>
+<div class="faq-item"><button class="question"><span>Should I book a consultation first?</span><span>+</span></button><div class="answer">For colour, corrective work, bridal or specialist skin services, a consultation is a helpful first step. Confirm the salon's actual policy before launch.</div></div>
+<div class="faq-item"><button class="question"><span>How can I check pricing and availability?</span><span>+</span></button><div class="answer">Use the enquiry form to request current service pricing, duration and available appointment times. This concept intentionally uses enquiry-led pricing.</div></div>
+<div class="faq-item"><button class="question"><span>Can I request a specific specialist?</span><span>+</span></button><div class="answer">Mention your preferred specialist or service when sending an enquiry. Availability should be confirmed by the studio team.</div></div>
+<div class="faq-item"><button class="question"><span>Can you handle bridal or group enquiries?</span><span>+</span></button><div class="answer">Share the event date, number of people and services required so the team can guide you through suitable options.</div></div>
+</div></div></section>
+<section class="cta"><div class="wrap cta-inner"><div><div class="kicker">Your next good moment</div><h2>Let's make a little time <em>for you.</em></h2></div><button class="btn" onclick="openBooking()">Enquire about an appointment ↗</button></div></section>
+</main>
+<footer><div class="wrap"><div class="foot-grid">
+<div><a class="brand" href="#home"><span class="monogram">É</span><span><b>MAISON ÉLAN</b><small>Beauty · Hair · Skin</small></span></a><p class="foot-note">A considered beauty studio concept for a more personal online experience. Replace this brand identity and all draft details with the salon's verified information.</p></div>
+<div><h4>Explore</h4><a href="#services">Services</a><a href="#experts">Artists</a><a href="#studio">The studio</a><a href="#reviews">Experience</a></div>
+<div><h4>Visit</h4><p>Patna, Bihar, India</p><p>Opening hours: To be confirmed</p><a href="#faq">Common questions</a></div>
+<div><h4>Connect</h4><p>Phone: Add verified number</p><p>Email: Add official email</p><button class="btn ghost" onclick="openBooking()">Send an enquiry ↗</button></div>
+</div><div class="bottom"><span>© <span id="year"></span> MAISON ÉLAN · CONCEPT PREVIEW</span><span>Not a live or official salon website. Details and imagery require approval.</span></div></div></footer>
+<div class="modal-bg" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal">
+<div class="modal-head"><div><div class="kicker">A personal appointment enquiry</div><h2 id="modalTitle">Let's plan your <em>visit.</em></h2></div><button class="close" onclick="closeBooking()" aria-label="Close">×</button></div>
+<div class="steps"><span class="step active" id="st1">01 · Service</span><span class="step" id="st2">02 · Date & time</span><span class="step" id="st3">03 · Your details</span></div><div id="modalBody"></div>
+<p class="modal-note">Concept interaction only. This form does not reserve an appointment, send data or process payments. Connect the salon's approved booking or WhatsApp system before launch.</p>
+</div></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const nav=document.getElementById('links'),menu=document.getElementById('menu');
+menu.addEventListener('click',()=>{let o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(o));menu.textContent=o?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false')}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.filter;document.querySelectorAll('.service').forEach(s=>s.style.display=(f==='all'||s.dataset.cat===f)&&(!s.classList.contains('extra')||!s.hidden)?'grid':'none')}));
+let expanded=false;document.getElementById('more').addEventListener('click',()=>{expanded=!expanded;document.querySelectorAll('.extra').forEach(s=>s.hidden=!expanded);document.getElementById('more').textContent=expanded?'Show fewer services ↑':'Show more services ↓';let f=document.querySelector('.filter.active').dataset.filter;document.querySelectorAll('.service').forEach(s=>s.style.display=(f==='all'||s.dataset.cat===f)&&(!s.classList.contains('extra')||expanded)?'grid':'none')});
+document.querySelectorAll('.question').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+const quotes=[['The best kind of salon visit is one where you feel heard, looked after and completely yourself.','A note on the experience'],['A calm space, a thoughtful consultation and a finish that feels like you. That is the experience worth creating.','The studio philosophy'],['From the first enquiry to the final detail, every touchpoint should feel simple, warm and personal.','A considered approach']];let qi=0;
+function setQuote(){document.getElementById('quote').textContent=quotes[qi][0];document.getElementById('quoteName').textContent=quotes[qi][1];}
+document.getElementById('prev').onclick=()=>{qi=(qi+quotes.length-1)%quotes.length;setQuote()};document.getElementById('next').onclick=()=>{qi=(qi+1)%quotes.length;setQuote()};
+const modal=document.getElementById('modal');let step=1;
+function openBooking(){modal.classList.add('show');document.body.style.overflow='hidden';bookingStep(1)}function closeBooking(){modal.classList.remove('show');document.body.style.overflow=''}window.openBooking=openBooking;window.closeBooking=closeBooking;
+modal.addEventListener('click',e=>{if(e.target===modal)closeBooking()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBooking()});
+function bookingStep(n){step=n;['st1','st2','st3'].forEach((id,i)=>document.getElementById(id).classList.toggle('active',i===n-1));let body=document.getElementById('modalBody');
+if(n===1)body.innerHTML=`<div class="field"><label for="service">Choose an area of interest</label><select id="service"><option>Haircut & styling</option><option>Hair colour</option><option>Facial & skin care</option><option>Makeup / bridal enquiry</option><option>Manicure & nails</option><option>Consultation / not sure yet</option></select></div><div class="modal-foot"><small>Step 1 of 3 · Enquiry only</small><button class="btn" onclick="bookingStep(2)">Continue →</button></div>`;
+if(n===2)body.innerHTML=`<div class="field-grid"><div class="field"><label for="date">Preferred date</label><input id="date" type="date" min="${new Date().toISOString().slice(0,10)}"></div><div class="field"><label for="time">Preferred time</label><select id="time"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Flexible</option></select></div></div><div class="modal-foot"><button class="btn ghost" onclick="bookingStep(1)">← Back</button><button class="btn" onclick="bookingStep(3)">Continue →</button></div>`;
+if(n===3)body.innerHTML=`<div class="field-grid"><div class="field"><label for="name">Your name</label><input id="name" placeholder="Name"></div><div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" placeholder="+91"></div><div class="field" style="grid-column:1/-1"><label for="note">Anything we should know?</label><textarea id="note" rows="3" placeholder="Service preferences, event date, questions..."></textarea></div></div><div class="modal-foot"><button class="btn ghost" onclick="bookingStep(2)">← Back</button><button class="btn" onclick="demoNotice()">Review enquiry ↗</button></div>`;
+}window.bookingStep=bookingStep;
+function demoNotice(){let t=document.getElementById('toast');t.textContent='Preview only: connect the salon WhatsApp or booking system to receive real enquiries.';t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3600)}window.demoNotice=demoNotice;
+</script></body></html>
